@@ -1,0 +1,80 @@
+/* -------------------------------------------------------- */
+/*               WELCOME :)                                */
+/* -------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+
+/* ------------------------------------- */
+
+html{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+/* ------------------------------------- */
+.mother{
+    display: flex;
+    height: 100vh;
+}
+/* -------------------------------------------------------- */
+/*              .child--skyblue  .child--orange             */
+/* -------------------------------------------------------- */
+.child--skyblue,
+.child--orange{
+    flex: 1;
+    height: 100%; 
+}
+.child--skyblue{
+    background-color: aqua;
+}
+.child--orange{ 
+    background-color: coral; 
+}
+/* -------------------------------------------------------- */
+/*              child--absolute                            */
+/* -------------------------------------------------------- */
+.child--absolute{
+    width: 100%;
+    height: 100%;
+    /* background-color: goldenrod; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mother__child{
+    background-color: green; 
+    width: 700px;
+    height: 400px;
+}
+/* --------------------------------------------- */
+/*        mother__main is centered              */
+/* --------------------------------------------- */
+.mother__main{ 
+    position: relative;
+    background-color: lightgray;
+    height: 100%;
+}
+.child--purple,
+.mother__main{
+    box-shadow: 5px 5px 10px 2px gray; 
+} 
+.child--purple{ 
+    color: white;
+    top: 10%; left: 5%;
+    position: absolute;
+    z-index: 100; 
+    width: 30%;
+    height: 80%;
+    padding: 1em;
+    background-color: purple;
+}
+.child--gold{ 
+    top: 0; right: 0;
+    position: absolute;
+    background-color: gold;
+    width: 80%;
+    height: 100%;  
+}
